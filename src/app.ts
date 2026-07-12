@@ -10,6 +10,8 @@ import n8nRoutes from "./routes/n8n.routes";
 import uploadRoutes from "./routes/upload.routes";
 import eventRoutes from "./routes/event.routes";
 import tagRoutes from "./routes/tag.routes";
+import investmentRoutes from "./routes/investment.routes";
+import businessRoutes from "./routes/business.routes";
 
 const app = express();
 
@@ -30,5 +32,7 @@ app.use("/api/upload", uploadRoutes);
 app.use("/api/n8n", n8nRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/tags", tagRoutes);
+app.use("/api/investments", investmentRoutes);
+app.use("/api/businesses", businessRoutes);
 
 export default app;
